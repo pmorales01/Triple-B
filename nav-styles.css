@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;1,700&family=Open+Sans&family=Roboto:ital,wght@0,400;1,300&display=swap");
+
+/* How CSS works is that "*" ".class-name" and tags like "h1" are affected with the corresponding {} attributes */
+* {
+  /* The star refers to all items in the html file */
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: #ff7900;
+}
+/* NAV BAR */
+nav {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  background-color: #00274c;
+  border: #002a51 5px solid;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0px 0px 30px #00274c;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 4;
+}
+nav .action {
+  color: #ff7900;
+  font-size: 18px;
+  font-weight: 700;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 8px 16px;
+  transition: 0.25s ease-in-out;
+}
+
+nav .action:hover {
+  color: #00274c;
+  background-color: #ff7900;
+}
+/* Adds animation to the Buy Borrow Books Title */
+
+nav .item {
+  font-size: 32px;
+  font-weight: 500;
+  transition: all 800ms;
+}
+/* Adds animation to the Buy Borrow Books Title */
+
+nav .item:hover {
+  transform: rotate(360deg)  scale(1.3);
+  font-weight: 900;
+  text-shadow: 2px 2px 8px black;
+}
+
+nav .container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1225px;
+  height: 80px;
+}
+
+nav .nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+}
+
+nav .nav-left h1 {
+  transition: all 300ms;
+}
+
+nav .nav-left h1:hover {
+  transform: scale(1.1);
+}
+
+nav .nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+
+nav .nav-right .item {
+  font-size: 28px;
+}
+
+.mobileHome {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 768px){
+  .mobileHome {
+    visibility: visible;
+  }
+  
+  .nav-right li{
+      font-size: 15px
+    }
+
+  .container h1{
+    display:none;
+  }
+
+  nav {
+    width: 98%;
+  }
+
+  nav .container{
+    justify-content: center;
+    
+    /* padding-right: 20px; */
+  }
+
+}

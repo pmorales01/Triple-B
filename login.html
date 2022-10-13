@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<div id="content-desktop">
+    <head>
+      <meta charset="utf-8">
+      <title>Tripple B Login</title>
+      <link rel="stylesheet" href="login.css">
+
+    </head>
+    <body>
+      <h1>Tripple B, CS students save the bookstore</h1>
+
+      <nav>
+        <div class ="container">
+          <ul class="nav-right">
+
+          </ul>
+        </div>
+      </nav>
+
+      <div class="Login">
+      </div>
+
+
+      <div class="RightColumn">
+
+      <!-- begin UPPER RIGHT box -->
+                  <div class="VisuallyHidden" id="upperRight" role="navigation" aria-labelledby="upperRight">
+
+                  </div>
+                  <div class="LoginBox" id="content" role="main">
+
+  <!-- begin login form -->
+                 <form name="loginForm" action=verify.php method="POST" id="Form1" role="form">
+
+                       <div class="form-element-wrapper">
+  Login
+                       </div>
+
+                    <div class="form-element-wrapper">
+                       <label for="username">Username</label>
+                       <input class="LoginTextBox" id="username" name="j_username" type="text" size="20" value="" autofocus="">
+                    </div>
+
+                    <div id="UsernameAlert" class="Alert" style="display: none;">
+                       Your username is the name before the '@' in your CSUF email address.
+                       <br>
+                       <a href="https://my.fullerton.edu/Accounts" class="LoginBoxAlert">Forgot your username?</a>
+                    </div>
+                    <div id="NewUserAlert" class="Alert" style="display: none;">
+                       Please click the link below to create your campus account.
+                       <br>
+                       <a href="https://my.fullerton.edu/Accounts/StudentRegistration" class="LoginBoxAlert">Create my campus account</a>
+                    </div>
+                    <div class="form-element-wrapper">
+                       <label for="password">Password</label>
+                       <input class="LoginTextBox" id="password" name="j_password" type="password" size="20" value="">
+                    </div>
+
+                    <div class="form-element-wrapper">
+                       <button class="LoginButton" type="submit" name="_eventId_proceed">Login</button>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="Help">Need help logging in?</a>
+
+                    <a> Not a member yet? </a>
+                    <a href="register.php">Sign Up</a>
+                 </form>
+              </div>
+
+  </script>
+  </div>
+
+      <footer>
+      </footer>
+    </body>
+</div>
+<div id="content-mobile">
+  <head>
+    <meta charset="utf-8">
+    <title>Tripple B Login</title>
+    <link rel="stylesheet" href="login.css">
+
+  </head>
+  <body>
+    <h1>Tripple B, CS students save the bookstore</h1>
+
+    <nav>
+      <div class ="container">
+        <ul class="nav-right">
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="Login">
+    </div>
+
+
+    <div class="RightColumn">
+
+    <!-- begin UPPER RIGHT box -->
+                <div class="VisuallyHidden" id="upperRight" role="navigation" aria-labelledby="upperRight">
+
+                </div>
+                <div class="LoginBox" id="content" role="main">
+
+<!-- begin login form -->
+               <form name="loginForm" action=verify.php method="POST" id="Form1" role="form">
+
+                     <div class="form-element-wrapper">
+Login
+                     </div>
+
+                  <div class="form-element-wrapper">
+                     <label for="username">Username</label>
+                     <input class="LoginTextBox" id="username" name="j_username" type="text" size="20" value="" autofocus="">
+                  </div>
+
+                  <div id="UsernameAlert" class="Alert" style="display: none;">
+                     Your username is the name before the '@' in your CSUF email address.
+                     <br>
+                     <a href="https://my.fullerton.edu/Accounts" class="LoginBoxAlert">Forgot your username?</a>
+                  </div>
+                  <div id="NewUserAlert" class="Alert" style="display: none;">
+                     Please click the link below to create your campus account.
+                     <br>
+                     <a href="https://my.fullerton.edu/Accounts/StudentRegistration" class="LoginBoxAlert">Create my campus account</a>
+                  </div>
+                  <div class="form-element-wrapper">
+                     <label for="password">Password</label>
+                     <input class="LoginTextBox" id="password" name="j_password" type="password" size="20" value="">
+                  </div>
+
+                  <div class="form-element-wrapper">
+                     <button class="LoginButton" type="submit" name="_eventId_proceed">Login</button>
+                  </div>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="Help">Need help logging in?</a>
+
+                  <!-- Prompt User to Sign Up If They Do Not Have an Account Yet -->
+                  <a> Not a member yet? </a>
+                  <a href="register.php">Sign Up</a>
+               </form>
+            </div>
+</div>
+</html>
